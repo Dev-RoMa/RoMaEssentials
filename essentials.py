@@ -38,7 +38,19 @@ while True:
         elif op == 6:
             subprocess.call('shutdown -h', shell=True)
         elif op == 7:
-            print("7")
+            print("welcome to the leet translator")
+            try:
+                op2 = int(input(" pick a choice =\n 1.- translator\n 2.- exit\n = "))
+                if op2==1:
+                    alphabet = ["A","B","C","D","E","F","G","H","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+                    leet_alphabet = ["4","8","(","l)","E","l=","6","l-l","¿","l<","l_","l\/l","l\l","0","°l","l>\\","5","7","l_l","\/\/","x","^/","-/_"]
+                    print(f"normal ascii alphbet = {alphabet}\nleet alphabet = {leet_alphabet}")
+                elif op2 ==2:
+                    print("okay")
+                else:
+                    print("pick a right choice")
+            except:
+                print("")
         elif op == 8:
             print("8")
         else:
